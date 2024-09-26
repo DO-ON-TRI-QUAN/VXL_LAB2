@@ -99,12 +99,15 @@ int main(void)
   setTimer(0, 500);
   while (1)
   {
+	  /*
        if (timer_flag[0] == 1) {
            twoLEDBlinky();
            setTimer(0, 500);
        }
+       */
 
    	   HAL_Delay(10);
+
 
 
 
