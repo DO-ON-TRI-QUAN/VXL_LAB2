@@ -22,7 +22,8 @@ Core/Src/Exercise1.o: ../Core/Src/Exercise1.c ../Core/Inc/Exercise1.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Core/Inc/display7seg.h
 
 ../Core/Inc/Exercise1.h:
 
@@ -75,3 +76,5 @@ Core/Src/Exercise1.o: ../Core/Src/Exercise1.c ../Core/Inc/Exercise1.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+
+../Core/Inc/display7seg.h:
