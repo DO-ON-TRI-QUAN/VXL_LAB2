@@ -101,13 +101,6 @@ int main(void)
   setTimer(1, 1000);
   while (1)
   {
-	  /*
-       if (timer_flag[0] == 1) {
-           twoLEDBlinky();
-           setTimer(0, 500);
-       }
-       */
-
 	  if (timer_flag[0] == 1) {
 		  four7segLED();
 		  setTimer(0, 500);
