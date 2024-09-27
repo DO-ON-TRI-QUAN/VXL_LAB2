@@ -121,6 +121,7 @@ int main(void)
 	  }
 	  */
 
+	  /*
 	  if (timer_flag[0] == 1) {
 	  	 update7SEG(index_LED++);
 	  	 setTimer(0, 500);
@@ -130,6 +131,7 @@ int main(void)
 	  	  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
 	  	  setTimer(1, 1000);
 	  }
+	  */
 
    	   HAL_Delay(10);
 
