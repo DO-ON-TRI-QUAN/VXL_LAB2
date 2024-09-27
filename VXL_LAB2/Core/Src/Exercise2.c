@@ -24,7 +24,7 @@ void four7segLED() {
 		break;
 
 	case 1:
-		HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
+	   	HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
 		HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, RESET);
 		display7SEG(2);
 		status = 2;

@@ -26,6 +26,7 @@
 #include "display7seg.h"
 #include "Exercise1.h"
 #include "Exercise2.h"
+#include "Exercise3.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -120,7 +121,10 @@ int main(void)
 	  }
 	  */
 
-
+	  if (timer_flag[0] == 1) {
+	  	 update7SEG(index_LED++);
+	  	 setTimer(0, 500);
+	  }
 
    	   HAL_Delay(10);
 
