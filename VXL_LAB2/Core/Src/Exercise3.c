@@ -9,7 +9,7 @@
 #include "display7seg.h"
 
 const int MAX_LED = 4;
-int LED_buffer[4] = {3, 0, 9, 1};
+int LED_buffer[4];
 
 void update7SEG (int index) {
 	HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET); // Turn off all LEDs initially
