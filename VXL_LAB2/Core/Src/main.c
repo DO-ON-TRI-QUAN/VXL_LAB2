@@ -25,6 +25,7 @@
 #include "softwareTimer.h"
 #include "display7seg.h"
 #include "Exercise1.h"
+#include "Exercise2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
