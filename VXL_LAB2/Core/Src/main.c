@@ -103,38 +103,6 @@ int main(void)
   setTimer(2, 5);
   while (1)
   {
-	  /*
-       if (timer_flag[0] == 1) {
-           twoLEDBlinky();
-           setTimer(0, 500);
-       }
-       */
-
-	  /*
-	  if (timer_flag[0] == 1) {
-		  four7segLED();
-		  setTimer(0, 500);
-	  }
-
-	  if (timer_flag[1] == 1) {
-	  	  	HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
-	  	  	setTimer(1, 1000);
-	  }
-	  */
-
-	  /*
-	  if (timer_flag[0] == 1) {
-	  	 update7SEG(index_LED++);
-	  	 setTimer(0, 500);
-	  }
-
-	  if (timer_flag[1] == 1) {
-	  	  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
-	  	  setTimer(1, 1000);
-	  }
-	  */
-
-
 	  if (timer_flag[0] == 1) {
 	  	  update7SEG(index_LED++);
 	  	  setTimer(2, 5);
