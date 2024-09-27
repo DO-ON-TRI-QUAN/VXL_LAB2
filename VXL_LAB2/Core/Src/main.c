@@ -126,6 +126,11 @@ int main(void)
 	  	 setTimer(0, 500);
 	  }
 
+	  if (timer_flag[1] == 1) {
+	  	  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+	  	  setTimer(1, 1000);
+	  }
+
    	   HAL_Delay(10);
 
     /* USER CODE END WHILE */
