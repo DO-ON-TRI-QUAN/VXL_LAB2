@@ -99,15 +99,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 500);
-  setTimer(1, 1000);
-  setTimer(2, 5);
-
   while (1)
   {
-	  if (timer_flag[0] == 1) {
-
-	  second++;
+ 	  second++;
 	  if (second >= 60) {
 	      second = 0;
 	      minute++;
@@ -122,13 +116,9 @@ int main(void)
 	       hour = 0;
 	   }
 
-	   updateClockBuffer() ;
+	   updateClockBuffer();
 
-	   setTimer(0, 500);
-
-	  }
-
-   	   HAL_Delay(10);
+	   HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 
@@ -261,7 +251,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
-	timer_run();
+
 }
 
 /* USER CODE END 4 */
