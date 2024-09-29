@@ -258,9 +258,8 @@ int counter = 100;
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
 	counter--;
 	if (counter <= 0) {
-		update7SEG(index_LED++);
 		counter = 100;
-		//update7SEG(index_LED++);
+		update7SEG(index_LED++);
 	}
 
 	timer_run();
