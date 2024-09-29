@@ -98,8 +98,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //setTimer(0, 500);
-  //setTimer(1, 1000);
   while (1)
   {
 
