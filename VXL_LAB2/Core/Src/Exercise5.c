@@ -15,6 +15,4 @@ void updateClockBuffer() {
 	LED_buffer[1] = hour % 10;
 	LED_buffer[2] = minute / 10;
 	LED_buffer[3] = minute % 10;
-
-	update7SEG(index_LED++);
 }
