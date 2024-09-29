@@ -231,8 +231,19 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+int counter = 100;
+int LED_buffer[4] = {5, 7, 3, 0};
+
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
-	timer_run();
+	counter--;
+	if (counter % 25 == 0) {     // Each 7seg LED is 1/4Hz
+		update7SEG(index_LED++);
+	}
+
+	if (counter <= 0) {
+	    counter = 100;
+		HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+	}
 }
 
 /* USER CODE END 4 */
