@@ -99,36 +99,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 500);
-  setTimer(1, 1000);
-  setTimer(2, 5);
 
   while (1)
   {
-	  if (timer_flag[0] == 1) {
 
-	  second++;
-	  if (second >= 60) {
-	      second = 0;
-	      minute++;
-	  }
-
-	  if (minute >= 60) {
-	      minute = 0;
-	      hour++;
-	  }
-
-	   if (hour >= 24) {
-	       hour = 0;
-	   }
-
-	   updateClockBuffer() ;
-
-	   setTimer(0, 500);
-
-	  }
-
-   	   HAL_Delay(10);
+  }
 
     /* USER CODE END WHILE */
 
