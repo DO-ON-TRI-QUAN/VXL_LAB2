@@ -96,17 +96,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 500);
   while (1)
   {
-       if (timer_flag[0] == 1) {
-           twoLEDBlinky();
-           setTimer(0, 500);
-       }
-
-   	   HAL_Delay(10);
-
-
 
     /* USER CODE END WHILE */
 
@@ -235,8 +226,13 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+int counter = 50;
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
-	timer_run();
+	counter--;
+	if (counter <= 0) {
+		counter = 50;
+		twoLEDBlinky();
+	}
 }
 
 /* USER CODE END 4 */
