@@ -97,21 +97,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 500);
-  setTimer(1, 1000);
   while (1)
   {
-	  if (timer_flag[0] == 1) {
-		  four7segLED();
-		  setTimer(0, 500);
-	  }
-
-	  if (timer_flag[1] == 1) {
-	  	  	HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
-	  	  	setTimer(1, 1000);
-	  	  }
-
-   	   HAL_Delay(10);
 
     /* USER CODE END WHILE */
 
@@ -243,8 +230,22 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+int counter1 = 50;
+int counter2 = 100;
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim) {
-	timer_run();
+	counter1--;
+	counter2--;
+
+	if (counter1 <= 0) {
+		counter1 = 50;
+		four7segLED();
+	}
+
+	if (counter2 <= 0) {
+		counter2 = 100;
+		HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+	}
+
 }
 
 /* USER CODE END 4 */
