@@ -339,7 +339,7 @@ Discarded input sections
  .data.minute   0x0000000000000000        0x4 ./Core/Src/Exercise5.o
  .data.second   0x0000000000000000        0x4 ./Core/Src/Exercise5.o
  .text.updateClockBuffer
-                0x0000000000000000       0x90 ./Core/Src/Exercise5.o
+                0x0000000000000000       0x80 ./Core/Src/Exercise5.o
  .debug_info    0x0000000000000000      0x213 ./Core/Src/Exercise5.o
  .debug_abbrev  0x0000000000000000       0xc9 ./Core/Src/Exercise5.o
  .debug_aranges
@@ -382,10 +382,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/Exercise5.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/Exercise5.o
  .debug_macro   0x0000000000000000       0xa0 ./Core/Src/Exercise5.o
- .debug_line    0x0000000000000000      0x691 ./Core/Src/Exercise5.o
+ .debug_line    0x0000000000000000      0x68e ./Core/Src/Exercise5.o
  .debug_str     0x0000000000000000    0x7f979 ./Core/Src/Exercise5.o
  .comment       0x0000000000000000       0x54 ./Core/Src/Exercise5.o
- .debug_frame   0x0000000000000000       0x2c ./Core/Src/Exercise5.o
+ .debug_frame   0x0000000000000000       0x30 ./Core/Src/Exercise5.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/Exercise5.o
  .group         0x0000000000000000        0xc ./Core/Src/display7seg.o
