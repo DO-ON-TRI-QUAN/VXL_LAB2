@@ -367,8 +367,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 10);
- 800031e:	210a      	movs	r1, #10
+  setTimer(0, 50);
+ 800031e:	2132      	movs	r1, #50	; 0x32
  8000320:	2000      	movs	r0, #0
  8000322:	f000 f905 	bl	8000530 <setTimer>
   //uint8_t matrix_buffer[8] = {0x01, 0x02 , 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -379,8 +379,8 @@ int main(void)
  8000328:	681b      	ldr	r3, [r3, #0]
  800032a:	2b01      	cmp	r3, #1
  800032c:	d1fb      	bne.n	8000326 <main+0x22>
-    	   setTimer(0, 10);
- 800032e:	210a      	movs	r1, #10
+    	   setTimer(0, 50);
+ 800032e:	2132      	movs	r1, #50	; 0x32
  8000330:	2000      	movs	r0, #0
  8000332:	f000 f8fd 	bl	8000530 <setTimer>
            updateLEDMatrix(index_LED_matrix++);
