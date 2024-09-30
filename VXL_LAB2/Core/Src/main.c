@@ -100,12 +100,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 500);
+  setTimer(0, 10);
   //uint8_t matrix_buffer[8] = {0x01, 0x02 , 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
   while (1)
   {
-
-       updateLEDMatrix(index_LED_matrix++);
+       if (timer_flag[0] == 1) {
+    	   setTimer(0, 10);
+           updateLEDMatrix(index_LED_matrix++);
+       }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

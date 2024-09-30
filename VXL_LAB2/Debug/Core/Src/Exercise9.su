@@ -1,3 +1,1 @@
-Exercise9.c:13:6:setCOL	16	static
-Exercise9.c:24:6:setROW	8	static
-Exercise9.c:36:6:updateLEDMatrix	16	static
+Exercise9.c:48:6:updateLEDMatrix	24	static
