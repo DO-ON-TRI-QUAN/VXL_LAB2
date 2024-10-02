@@ -2,6 +2,7 @@
 "./Core/Src/Exercise2.o"
 "./Core/Src/Exercise3.o"
 "./Core/Src/Exercise5.o"
+"./Core/Src/Exercise9.o"
 "./Core/Src/display7seg.o"
 "./Core/Src/main.o"
 "./Core/Src/softwareTimer.o"
