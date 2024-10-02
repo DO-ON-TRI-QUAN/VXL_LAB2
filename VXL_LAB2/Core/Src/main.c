@@ -100,6 +100,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   setTimer(0, 1000);
+  setTimer(1, 250);
   while (1)
   {
    	   if (timer_flag[0] == 1) {
@@ -123,7 +124,11 @@ int main(void)
 	 	   }
 
 	 	   updateClockBuffer();
-	 	   update7SEG(index_LED++);
+   	   }
+
+   	   if (timer_flag[1] == 1) {
+   		   setTimer(1, 250);
+   		   update7SEG(index_LED++);
    	   }
     /* USER CODE END WHILE */
 
