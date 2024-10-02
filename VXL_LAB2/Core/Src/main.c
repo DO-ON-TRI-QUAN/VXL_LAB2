@@ -29,6 +29,7 @@
 #include "Exercise3.h"
 #include "Exercise5.h"
 #include "Exercise9.h"
+#include "Exercise10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
