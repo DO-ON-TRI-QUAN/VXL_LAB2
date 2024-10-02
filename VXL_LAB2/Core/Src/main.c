@@ -105,17 +105,7 @@ int main(void)
   setTimer(1, 400);
   while (1)
   {
-       if (timer_flag[0] == 1) {
-    	   setTimer(0, 50);
-    	   //LEDanimation();
-    	   updateLEDMatrix(index_LED_matrix++);
-    	   //LEDanimation();
-       }
 
-       if (timer_flag[1] == 1) {
-    	   setTimer(1, 400);
-    	   LEDanimation();
-       }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
