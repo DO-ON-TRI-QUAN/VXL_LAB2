@@ -488,11 +488,11 @@ int main(void)
  800040a:	681b      	ldr	r3, [r3, #0]
  800040c:	2b3b      	cmp	r3, #59	; 0x3b
  800040e:	dd07      	ble.n	8000420 <main+0x68>
-	 	   second = 0;
+	 	       second = 0;
  8000410:	4b19      	ldr	r3, [pc, #100]	; (8000478 <main+0xc0>)
  8000412:	2200      	movs	r2, #0
  8000414:	601a      	str	r2, [r3, #0]
-	 	   minute++;
+	 	       minute++;
  8000416:	4b19      	ldr	r3, [pc, #100]	; (800047c <main+0xc4>)
  8000418:	681b      	ldr	r3, [r3, #0]
  800041a:	3301      	adds	r3, #1

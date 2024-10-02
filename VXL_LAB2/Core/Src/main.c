@@ -110,8 +110,8 @@ int main(void)
 
    		   second++;
 	 	   if (second >= 60) {
-	 	   second = 0;
-	 	   minute++;
+	 	       second = 0;
+	 	       minute++;
 	 	   }
 
 	 	   if (minute >= 60) {
