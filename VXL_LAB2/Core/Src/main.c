@@ -29,6 +29,7 @@
 #include "Exercise3.h"
 #include "Exercise5.h"
 #include "Exercise9.h"
+#include "Exercise10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,9 +101,21 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer(0, 50);
+  setTimer(1, 400);
   while (1)
   {
+       if (timer_flag[0] == 1) {
+    	   setTimer(0, 50);
+    	   //LEDanimation();
+    	   updateLEDMatrix(index_LED_matrix++);
+    	   //LEDanimation();
+       }
 
+       if (timer_flag[1] == 1) {
+    	   setTimer(1, 400);
+    	   LEDanimation();
+       }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
