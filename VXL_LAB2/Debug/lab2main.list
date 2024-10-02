@@ -417,7 +417,6 @@ int main(void)
  8000374:	2132      	movs	r1, #50	; 0x32
  8000376:	2000      	movs	r0, #0
  8000378:	f000 f908 	bl	800058c <setTimer>
-    	   //LEDanimation();
     	   updateLEDMatrix(index_LED_matrix++);
  800037c:	4b0b      	ldr	r3, [pc, #44]	; (80003ac <main+0x6c>)
  800037e:	681b      	ldr	r3, [r3, #0]
@@ -426,7 +425,6 @@ int main(void)
  8000384:	600a      	str	r2, [r1, #0]
  8000386:	4618      	mov	r0, r3
  8000388:	f7ff ff0e 	bl	80001a8 <updateLEDMatrix>
-    	   //LEDanimation();
        }
 
        if (timer_flag[1] == 1) {

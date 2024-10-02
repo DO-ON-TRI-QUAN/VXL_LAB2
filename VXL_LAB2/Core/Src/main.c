@@ -107,9 +107,7 @@ int main(void)
   {
        if (timer_flag[0] == 1) {
     	   setTimer(0, 50);
-    	   //LEDanimation();
     	   updateLEDMatrix(index_LED_matrix++);
-    	   //LEDanimation();
        }
 
        if (timer_flag[1] == 1) {
