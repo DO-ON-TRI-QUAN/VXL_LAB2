@@ -101,7 +101,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   setTimer(0, 50);
-  //uint8_t matrix_buffer[8] = {0x01, 0x02 , 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
   while (1)
   {
        if (timer_flag[0] == 1) {
