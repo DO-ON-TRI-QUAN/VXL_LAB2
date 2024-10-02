@@ -142,9 +142,9 @@ void updateLEDMatrix(int index) {
  80001c8:	bf58      	it	pl
  80001ca:	4253      	negpl	r3, r2
  80001cc:	607b      	str	r3, [r7, #4]
-    // matrix_buffer[0x24] & (1 << 0), i = 0
+    // matrix_buffer[2] & (1 << 0), i = 0
     // 00100100 & 00000001 = 00000000 => COL0 is off
-    // matrix_buffer[0x24] & (1 << 2), i = 2
+    // matrix_buffer[2] & (1 << 2), i = 2
     // 00100100 & 00000100 = 00000100 => COL2 is on
     // And so on
     for (int i = 0; i < 8; i++) {

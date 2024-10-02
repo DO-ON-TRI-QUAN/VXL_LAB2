@@ -41,9 +41,9 @@ void updateLEDMatrix(int index) {
     // (1 << i): shift the number 1 left by i bits
     // (1 << 0) = 00000001, (1 << 2) = 00000100...
     // For example:
-    // matrix_buffer[0x24] & (1 << 0), i = 0
+    // matrix_buffer[2] & (1 << 0), i = 0
     // 00100100 & 00000001 = 00000000 => COL0 is off
-    // matrix_buffer[0x24] & (1 << 2), i = 2
+    // matrix_buffer[2] & (1 << 2), i = 2
     // 00100100 & 00000100 = 00000100 => COL2 is on
     // And so on
     for (int i = 0; i < 8; i++) {
